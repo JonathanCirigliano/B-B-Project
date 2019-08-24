@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cirigliano Bed & Breakfast</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5add38a3b8.js"></script>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <div id="background_3">
+        <header>
+            <nav>
+                <div id="logo">
+                    <h1><a href="index.html">Bed & Breakfast</a></h1>
+                </div>
+                <ul>
+                    <li><a href="chisiamo.html">Chi siamo</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="tradizioni.html">Tradizioni</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon">
+                <div></div>
+            </div>
+        </header>
+        <nav id="mobileMenu">
+            <ul>
+                <li><a href="chisiamo.html">Chi siamo</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="tradizioni.html">Tradizioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+        <div id="chisiamoContent">
+            <h1>Chi Siamo</h1>
+        </div>
+    </div>
+
+    <section id="presentazione">
+        <div id="moliterno" data-aos="fade-up-right">
+            <hr id="linea">
+            <h2>Bed & Breakfast</h2>
+            <p>Il nostro Bed & Breakfast è situato nella cittadina di Moliterno, nel mezzo dell'Appennino lucano.</p>
+            <p>Situato in un punto strategico del paese, dalla vostra stanza potrete ammirare il centro storico, dominato da un castello longobardo di origine medievale, affiancato dalla Chiesa Madre risalente al XIII secolo.  </p>
+        </div>
+        <div id="chiesa" data-aos="fade-up-left">
+            <div id="coolBorder"></div>
+        </div>
+    </section>
+
+    <footer id="footer">
+		<address id="address">
+			<i class="fas fa-envelope" id="lettera"></i>
+			<a href="mailto:ciriglianojonathan5@gmail.com" id="email">Bed & Breakfast</a><br /><br />
+			Moliterno, Italy<br />
+			<div id="social">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/cirigliano_j" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</address>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){ 
+		    $('.nav-icon').click(function(){
+			    event.preventDefault();
+			    $('#mobileMenu ul').slideToggle(1000);
+		    });
+	    });
+
+        AOS.init({
+			duration: 1400,
+		});
+
+    </script>
+</body>
+</html>

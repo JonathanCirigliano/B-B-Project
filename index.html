@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cirigliano Bed & Breakfast</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5add38a3b8.js"></script>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <div id="background">
+        <header>
+            <nav>
+                <div id="logo">
+                    <h1><a href="index.html">Bed & Breakfast</a></h1>
+                </div>
+                <ul>
+                    <li><a href="chisiamo.html">Chi siamo</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="tradizioni.html">Tradizioni</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon">
+                <div></div>
+            </div>
+        </header>
+        <nav id="mobileMenu">
+            <ul>
+                <li><a href="chisiamo.html">Chi siamo</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="tradizioni.html">Tradizioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+        <div id="homeContent">
+            <h1>Bed & Breakfast</h1>
+            <p>Nel mezzo della terra della luce.</p>
+        </div>
+    </div>
+
+    <section id="presentazione">
+        <div data-aos="fade-up-right" id="moliterno">
+            <hr id="linea">
+            <h2>Moliterno</h2>
+            <p>Il tipico paesaggio appenninico lucano circonda Moliterno, che si sviluppa avvinghiato al castello di epoca angioina, attraverso pittoreschi viottoli acciottolati stretti e in salita, su cui sfilano antiche abitazioni in sasso ed eleganti palazzi nobiliari.</p>
+        </div>
+        <div id="about"  data-aos="fade-up-left">
+            <div id="coolBorder"></div>
+            <h1>Scopri chi siamo</h1>
+            <a href="chisiamo.html">Chi Siamo</a>
+        </div>
+    </section>
+
+    <section id="turismo">
+            <h1>Il Territorio Lucano</h1>
+            <p>La Basilicata, regione situata tra la Calabria e la Puglia, rappresenta un territorio in cui la montagna e il mare si incontrano e fanno da estremi a tutto citò che questa meravigliosa regione sa offrire, tanto agli appassionati di outdoor quanto agli amanti della cultura e della storia. Un luogo ideale per il turismo escursionistico, fra trekking in montagna, escursioni alal scoperta di cascate nascoste, fiumi da discendere praticando rafting o canyoning, itinerari per mountain bike o ciclo escursionismo, valli da sorvolare in parapendio o appesi a una teleferica. </p>
+    </section>
+
+    <section id="cucina">
+        <div id="tradizioneCulinaria" data-aos="fade-up-right">
+            <hr id="linea">
+            <h2>Tradizione culinaria</h2>
+            <p>Il Canestrato di Moliterno è un formaggio tipico della Val d'Agri in Lucania, Basilicata. Il nome del comune Moliterno, in provincia di Potenza, deriva dal latino "molcretum" che significa "luogo dove si fa il latte", ad indicare la zona particolarmente vocata per la lavorazione del latte e la stagionatura dei formaggi. Il nome "canestrato", invece, deve la sua origine ai canestri, i contenitori appositi dove la cagliata viene pressata a mano per renderla compatta.</p>
+        </div>
+        <div id="pecorino" data-aos="fade-up-left">
+            <div id="coolBorder"></div>
+            <h1>Altre tradizioni lucane</h1>
+            <a href="tradizioni.html">Tradizioni</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+		<address id="address">
+			<i class="fas fa-envelope" id="lettera"></i>
+			<a href="mailto:ciriglianojonathan5@gmail.com" id="email">Bed & Breakfast</a><br /><br />
+			Moliterno, Italy<br />
+			<div id="social">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/cirigliano_j" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</address>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){ 
+		    $('.nav-icon').click(function(){
+			    event.preventDefault();
+			    $('#mobileMenu ul').slideToggle(1000);
+		    });
+        });
+
+        AOS.init({
+			duration: 1400,
+		});
+        
+
+    </script>
+</body>
+</html>

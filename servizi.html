@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cirigliano Bed & Breakfast</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5add38a3b8.js"></script>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <div id="background_2">
+        <header>
+            <nav class="blackNav">
+                <div id="logo">
+                    <h1><a href="index.html">Bed & Breakfast</a></h1>
+                </div>
+                <ul>
+                    <li><a href="chisiamo.html">Chi siamo</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="tradizioni.html">Tradizioni</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon">
+                <div></div>
+            </div>
+        </header>
+        <nav id="mobileMenu" class="blackMobile">
+            <ul>
+                <li><a href="chisiamo.html">Chi siamo</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="tradizioni.html">Tradizioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+        <div id="homeContentServizi">
+            <h1>Cosa Offriamo</h1>
+        </div>
+    </div>
+
+    <section class="serviziB">
+        <div id="moliterno" data-aos="fade-up-right">
+            <hr id="lineaBianca">
+            <h2>Climbing</h2>
+            <p>La falesia si trova a due passi dal paese ad accogliervi troverete un incisione in legno "BENVENUTI NELLA TERRA DI MEZZO". Volutamente ispirata al signore degli anelli vista la sua posizione geografica (giungendo al paese si trova circa al centro)conta 4 settori "GRAN BURRONE", "ISENGARD", "FOSSO DI HELM", "LE MINIERE DI MORIA" con circa 33 vie che variano dal 5a al 7c+.
+            Posto incantevole per i caldi week end estivi. Area attrezzata con panchine e barbecue e parcheggio sotto le pareti.</p>
+        </div>
+        <div id="climbing" data-aos="fade-up-left">
+            <div id="coolBorder"></div>
+        </div>
+    </section>
+
+    <section class="servizi">
+        <div id="pool" data-aos="fade-up-right">
+        <div id="coolBorder"></div>
+        </div>
+        <div id="moliterno" data-aos="fade-up-left">
+            <hr id="linea">
+            <h2>Piscina</h2>
+            <p>Per i clienti del nostro Bed & Breakfast durante il soggiorno, piscina gratuita a Moliterno. Si può partecipare a corsi di nuoto e acquagym.</p>
+        </div>
+        
+    </section>
+
+    <section class="serviziB">
+        <div id="tradizioneCulinaria" data-aos="fade-up-right">
+            <hr id="lineaBianca">
+            <h2>Camping</h2>
+            <p>Nel caso si abbia voglia di una gita in montagna il nostro Bed & Breakfast dispone di guide e attrezzatura da campeggio. Per noi è molto importante, invitare i nostri clienti a vivere la Basilicata, trascorrendo del tempo all'aria aperta, alloggiando in rimpari temporanei o tenda.</p>
+        </div>
+        <div id="camping" data-aos="fade-up-left">
+            <div id="coolBorder"></div>
+        </div>
+    </section>
+
+    <section class="servizi">
+            <div id="tennis" data-aos="fade-up-right">
+                    <div id="coolBorder"></div>
+            </div>
+            <div id="tradizioneCulinaria" data-aos="fade-up-left">
+                <hr id="linea">
+                <h2>Tennis</h2>
+                <p>Il nostro Bed & Breakfast collabora con insegnanti di tennis e con i proprietari della struttura che ospita i campi da tennis. Per i nostri clienti interessati è possibile svolgere lezioni o partecipare a competizioni amatoriali. </p> 
+            </div>
+    </section>
+
+    <footer id="footer">
+		<address id="address">
+			<i class="fas fa-envelope" id="lettera"></i>
+			<a href="mailto:ciriglianojonathan5@gmail.com" id="email">Bed & Breakfast</a><br /><br />
+			Moliterno, Italy<br />
+			<div id="social">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/cirigliano_j" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</address>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){ 
+		    $('.nav-icon').click(function(){
+			    event.preventDefault();
+			    $('#mobileMenu ul').slideToggle(1000);
+		    });
+	    });
+
+        AOS.init({
+			duration: 1400,
+		});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,1225 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background {
+    background-image: url(../img/bedroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+#logo {
+    float: left;
+    margin: 20px 40px;
+    font-family: 'Lacquer', sans-serif;
+}
+
+#logo h1{
+    font-size: 200%;
+    color: black;
+    letter-spacing: 0.2em;
+}
+
+#logo h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    float: right
+}
+
+nav ul li{
+    float: left;
+    margin-right: 40px;
+    margin-top: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid white;
+    width: 0;
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+}
+nav ul li a:hover:after { width: 100%; }
+
+.blackNav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.blackNav ul li a:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid black;
+    width: 0;
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+}
+nav ul li a:hover:after { width: 100%; }
+
+
+.blackMobile ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.blackMobile ul li a:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid black;
+    width: 0;
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+}
+.blackMobile ul li a:hover:after { width: 100%; }
+
+#mobileMenu {
+    display: none;
+}
+
+#homeContent h1{
+    position: absolute;
+    top: 47%;
+    left: 32%;
+    margin: 0 auto; 
+    text-transform: uppercase;
+    font-size: 300%; 
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+#homeContent p{
+    position: absolute;
+    top: 58%;
+    left: 34%;
+    margin: 0 auto;
+    font-family: 'Lacquer', sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.2em;
+    font-size: 120%;
+}
+
+/* Sezione 2 */
+#presentazione {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+}
+
+#moliterno {
+    flex-basis: 500px;
+    margin: 160px 50px;
+}
+
+#moliterno h2 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #6E3218;
+}
+
+#moliterno p{
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+    color: #6E3218;
+    text-align: justify;
+}
+
+#about {
+    flex-basis: 600px;
+    background-image: url(../img/moliterno_2.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+#about h1 {
+    font-size: 170%;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#about a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid #ECE6DA;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#about a:hover{
+    background-color: #6E3218;
+}
+
+#coolBorder {
+    border: 5px #6E3218 solid;
+}
+
+#linea {
+    border: 1px solid #ECE6DA ;
+}
+
+#linea:hover {
+    border: 1px solid #D16335;
+}
+
+/* Sezione 3 */
+#turismo {
+    background: url(../img/maratea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    opacity: 0.7;
+}
+
+#turismo h1{
+    color: #6E3218;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 200%;
+    padding: 80px 50px;
+}
+
+#turismo p{
+    color: black;
+    letter-spacing: 0.1em;
+    padding: 26px 50px;
+    font-weight: bold;
+}
+
+/* Sezione 4 */
+#cucina {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+}
+
+#tradizioneCulinaria {
+    flex-basis: 500px;
+    margin: 160px 50px;
+}
+
+#tradizioneCulinaria h2 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #6E3218;
+}
+
+#tradizioneCulinaria p{
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+    color: #6E3218;
+    text-align: justify;
+}
+
+#pecorino{
+    flex-basis: 600px;
+    background-image: url(../img/pecorino_2.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+#pecorino h1 {
+    font-size: 170%;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#pecorino a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid #ECE6DA;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#pecorino a:hover{
+    background-color: #6E3218;
+}
+
+#coolBorder {
+    border: 5px #6E3218 solid;
+}
+
+#linea {
+    border: 1px solid #ECE6DA ;
+}
+
+#lineaBianca {
+    border: 1px solid white ;
+}
+
+#linea:hover {
+    border: 1px solid #D16335;
+}
+
+#lineaBianca:hover {
+    border: 1px solid #D16335;
+}
+
+/* footer */
+footer {
+	background-color: #ECE6DA;
+	text-align: center;
+}
+
+address {
+	padding: 70px;
+	color: #6E3218;
+	font-size: 18px;
+}
+
+.marginFooter {
+    padding-top: 430px;
+}
+
+#email{
+	text-decoration: none;
+	font-style: normal;
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-left: 20px;
+	color: #6E3218;
+	letter-spacing: 0.2em;
+	transition: transform 1.6s;
+	font-weight: 600;
+}
+
+ #email:hover{
+	color: black;
+}
+
+#lettera{
+	font-size: 20px;
+	color: #6E3218;
+}
+
+#social{
+	padding-top: 30px;
+}
+
+#social a{
+	padding: 20px 20px 0 20px;
+	color: #6E3218;
+	
+}
+
+#social i:hover{
+	transform: scale(1.5);
+	color: black;
+}
+
+#social i{
+	font-size: 30px;
+	transition: transform 1.6s;
+}
+
+/* Chi siamo */
+#background_3 {
+    background-image: url(../img/coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+#chiesa {
+    flex-basis: 600px;
+    background-image: url(../img/chiesa.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+#chisiamoContent h1{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    margin: 0 auto; 
+    text-transform: uppercase;
+    font-size: 300%; 
+    letter-spacing: 0.1em;
+    color: #ECE6DA;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+#homeContentServizi h1{
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    margin: 0 auto; 
+    text-transform: uppercase;
+    font-size: 300%; 
+    letter-spacing: 0.1em;
+    color: #ECE6DA;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+
+/* Servizi */
+#background_2 {
+    background-image: url(../img/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+#climbing {
+        flex-basis: 600px;
+        background-image: url(../img/climbing.jpg); 
+        margin: 100px 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        height: 400px;
+        text-align: right;
+        padding: 0 50px;
+}
+
+#pool {
+    flex-basis: 600px;
+    background-image: url(../img/pool.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+#camping {
+    flex-basis: 600px;
+    background-image: url(../img/camping.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+#tennis {
+    flex-basis: 600px;
+    background-image: url(../img/tennis.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+.serviziB {
+    display: flex;
+    background-color: #ECE6DA;
+    justify-content: flex-start;
+    border-bottom: solid 2px #6E3218;
+}
+
+.servizi {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    border-bottom: solid 2px #D16335;
+}
+
+/* Tradizioni */
+#background_4 {
+    background-image: url(../img/pasta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+#tradizioniTitle h1{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    margin: 0 auto; 
+    text-transform: uppercase;
+    font-size: 300%; 
+    letter-spacing: 0.1em;
+    color: #ECE6DA;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+#gruppo_folk {
+    flex-basis: 600px;
+    background-image: url(../img/gruppo_folk.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+#affresco {
+    flex-basis: 600px;
+    background-image: url(../img/affreschi.jpg); 
+    margin: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 400px;
+    text-align: right;
+    padding: 0 50px;
+}
+
+/* Contatti */
+#background_5 {
+    background-image: url(../img/contatti.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+form {
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 480px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+legend {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 200%;
+    color: lightslategray;
+}
+
+label {
+    color: lightslategray;
+    text-transform: uppercase;
+    display: inline;
+}
+
+#campoNome input {
+    margin-left: 50px;
+    margin-top: 40px;
+    border: lightslategray 2px solid;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: rgba(255, 0, 0, 0.4);
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#campoCognome input {
+    margin-left: 10px;
+    margin-top: 30px;
+    border: lightslategray 2px solid;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: rgba(255, 0, 0, 0.4);
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#campoEmail input {
+    margin-left: 52px;
+    margin-top: 30px;
+    border: lightslategray 2px solid;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: rgba(255, 0, 0, 0.4);
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#campoNome input, #campoCognome input, #campoEmail input:focus {
+    outline: none;
+}
+
+textarea {
+    background-color: rgba(255, 0, 0, 0.4);
+    width: 400px;
+    height: 100px;
+    color: black;
+    margin-top: 30px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#btnSubmit {
+    background-color: rgba(255, 0, 0, 0.4);
+    width: 100px;
+    border: lightslategray 2px solid;
+    color: lightslategray;
+    text-transform: uppercase;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#btnSubmit:hover {
+    background-color: lightslategray;
+    border: rgba(255, 0, 0) 2px solid;
+    color: rgba(255, 0, 0)
+}
+
+/* Responsive WebSite */
+@media (max-width: 768px) {
+    #logo {
+        clear: both;
+        margin: 20px 20px;
+    }
+
+    #logo h1 {
+        text-align: center;
+    }
+
+    nav ul{
+        display: none;
+        clear: both;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    #homeContent h1{
+        position: absolute;
+        top: 47%;
+        left: 24%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 170%; 
+        letter-spacing: 0.1em;
+        color: white;
+    }
+
+    #homeContent p{
+        position: absolute;
+        top: 58%;
+        left: 20%;
+        margin: 0 auto;
+        font-family: 'Lacquer', sans-serif;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 90%;
+    }
+
+    #presentazione {
+        display: inline-block;
+    }
+
+    #cucina {
+        display: inline-block;
+    }
+
+    #turismo {
+        height: 680px;
+    }
+
+    #turismo h1 {
+        font-size: 150%;
+    }
+
+    #turismo p{
+        line-height: 1.6em;
+    }
+
+    #chisiamoContent h1{
+        position: absolute;
+        top: 50%;
+        left: 28%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #homeContentServizi h1{
+        position: absolute;
+        top: 50%;
+        left: 16%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    .serviziB {
+        display: inline-block;
+    }
+    
+    .servizi {
+        display: inline-block;
+    }
+
+    #tradizioniTitle h1{
+        position: absolute;
+        top: 50%;
+        left: 26%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    .nav-icon {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 34px;
+		float: right;
+        top: 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+    .nav-icon:hover {
+        border-radius: 0; 
+        transition: 1s ease-in;
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+
+    #background_5 {
+        height: 140vh;
+    }
+    
+}   
+
+@media (max-width: 968px) and (min-width: 769px) {
+    #logo {
+        clear: both;
+        margin: 20px 20px;
+    }
+
+    #logo h1 {
+        text-align: center;
+    }
+
+    nav ul{
+        display: none;
+        clear: both;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    #homeContent h1{
+        position: absolute;
+        top: 47%;
+        left: 35%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 170%; 
+        letter-spacing: 0.1em;
+        color: white;
+    }
+
+    #homeContent p{
+        position: absolute;
+        top: 58%;
+        left: 33%;
+        margin: 0 auto;
+        font-family: 'Lacquer', sans-serif;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 90%;
+    }
+
+    #presentazione {
+        display: inline-block;
+    }
+
+    #cucina {
+        display: inline-block;
+    }
+
+    #turismo {
+        height: 680px;
+    }
+
+    #turismo h1 {
+        font-size: 150%;
+    }
+
+    #turismo p{
+        line-height: 1.6em;
+    }
+
+    #chisiamoContent h1{
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #homeContentServizi h1{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    .serviziB {
+        display: inline-block;
+    }
+    
+    .servizi {
+        display: inline-block;
+    }
+
+    #tradizioniTitle h1{
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    .nav-icon {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 60px;
+        float: right;
+        top: 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+    .nav-icon:hover {
+        border-radius: 0; 
+        transition: 1s ease-in;
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+
+    #background_5 {
+        height: 140vh;
+    }
+}   
+
+@media (max-width: 480px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #logo {
+        clear: both;
+        margin: 20px 20px;
+    }
+
+    #logo h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    nav ul{
+        display: none;
+        clear: both;
+    }
+
+    nav ul li {
+        float: none;
+        margin-right: 20px;
+        margin-top: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    #homeContent h1{
+        position: absolute;
+        top: 47%;
+        left: 26%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 120%; 
+        letter-spacing: 0.1em;
+        color: white;
+    }
+
+    #homeContent p{
+        position: absolute;
+        top: 58%;
+        left: 16%;
+        margin: 0 auto;
+        font-family: 'Lacquer', sans-serif;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 80%;
+    }
+
+    #presentazione {
+        display: inline-block;
+    }
+
+    #cucina {
+        display: inline-block;
+    }
+
+    #turismo {
+        height: 880px;
+    }
+
+    #turismo h1 {
+        font-size: 150%;
+    }
+
+    #turismo p{
+        line-height: 1.6em;
+    }
+
+    #chisiamoContent h1{
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #homeContentServizi h1{
+        position: absolute;
+        top: 50%;
+        left: 14%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 170%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    .serviziB {
+        display: inline-block;
+    }
+    
+    .servizi {
+        display: inline-block;
+    }
+
+    #tradizioniTitle h1{
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    .nav-icon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        right: 20px;
+        float: right;
+        top: 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+    .nav-icon:hover {
+        border-radius: 0; 
+        transition: 1s ease-in;
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+
+    #background_5 {
+        height: 140vh;
+    }
+	
+}   
+
+@media (max-width: 360px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #logo {
+        clear: both;
+        margin: 20px 20px;
+    }
+
+    #logo h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    nav ul{
+        display: none;
+        clear: both;
+    }
+
+    nav ul li {
+        float: none;
+        margin-right: 20px;
+        margin-top: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    #homeContent h1{
+        position: absolute;
+        top: 47%;
+        left: 18%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 120%; 
+        letter-spacing: 0.1em;
+        color: white;
+    }
+
+    #homeContent p{
+        position: absolute;
+        top: 58%;
+        left: 2%;
+        margin: 0 auto;
+        font-family: 'Lacquer', sans-serif;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 80%;
+    }
+
+    #about {
+        flex-basis: 600px;
+        background-image: url(../img/moliterno_2.jpg); 
+        margin: 100px auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        height: 400px;
+        text-align: right;
+        padding: 0 50px;
+    }
+
+    #presentazione {
+        display: inline-block;
+    }
+
+    #cucina {
+        display: inline-block;
+    }
+
+    #turismo {
+        height: 948px;
+    }
+
+    #turismo h1 {
+        font-size: 150%;
+    }
+
+    #turismo p{
+        line-height: 1.6em;
+    }
+
+    #chisiamoContent h1{
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #homeContentServizi h1{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 150%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    .serviziB {
+        display: inline-block;
+    }
+    
+    .servizi {
+        display: inline-block;
+    }
+
+    #tradizioniTitle h1{
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-size: 200%; 
+        letter-spacing: 0.1em;
+        color: #ECE6DA;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    .nav-icon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        right: 20px;
+        float: right;
+        top: 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+    .nav-icon:hover {
+        border-radius: 0; 
+        transition: 1s ease-in;
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+
+    #background_5 {
+        height: 140vh;
+    }
+	
+}   
+
